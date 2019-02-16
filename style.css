@@ -1,0 +1,46 @@
+
+.sub1
+{
+  border: 1px solid black;
+  border-color: red green yellow;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+  text-align: center;
+  background-color:Azure;
+  width:30%;
+}
+.mainDiv
+{
+  display: flex;
+  flex-wrap: wrap;
+}
+@media only screen and  (max-width:450px) {
+  .mainDiv
+  {
+    display: flex;
+    flex-direction:column;
+  }
+  img{
+    width:20px;
+  }
+}
+  @media screen and (min-width:426px) and (max-width:768px) {
+    .mainDiv
+    {
+      display: flex;
+      flex-direction:column;
+      flex-wrap: wrap;
+      flex-direction: row-reverse;
+    }
+  }
+    @media screen and (min-width:769px) and (max-width:1024px) {
+      .mainDiv
+      {
+        display: flex;
+        flex-direction:column;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+      }
+    }
